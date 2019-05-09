@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - dcoker build  -t pghukasyan/docker-react -f Dockerfile.dev .
+  - docker build  -t pghukasyan/docker-react -f Dockerfile.dev .
 
 script:
   - docker run pghukasyan/docker-react npm run test -- --coverage 
